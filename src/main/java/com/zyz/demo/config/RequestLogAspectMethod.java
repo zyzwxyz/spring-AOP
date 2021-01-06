@@ -24,7 +24,7 @@ public class RequestLogAspectMethod {
     @Before("show()")
     public void before(JoinPoint joinPoint){
         String name = joinPoint.getSignature().getName();
-        LOGGER.info("{}方法开始执行(=====基于方法的切面=====)",name);
+        LOGGER.info("{}(=====基于方法的切面=====)",name);
     }
 
 }

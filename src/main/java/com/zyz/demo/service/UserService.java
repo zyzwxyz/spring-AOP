@@ -14,7 +14,4 @@ public class UserService {
         return "zyz";
     }
 
-    public void deleteUser(Integer id){
-        LOGGER.info("id为{}的用户被删除",id);
-    }
 }

@@ -1,0 +1,22 @@
+2021-01-06 16:46:23.366 [main] INFO  com.zyz.demo.DemoApplication - Starting DemoApplication using Java 1.8.0_181 on LAPTOP-GQ2A4L6I with PID 18892 (E:\IDEAProject1\demo\target\classes started by 郑勇志 in E:\IDEAProject1\demo)
+2021-01-06 16:46:23.370 [main] INFO  com.zyz.demo.DemoApplication - No active profile set, falling back to default profiles: default
+2021-01-06 16:46:25.361 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2021-01-06 16:46:25.375 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2021-01-06 16:46:25.376 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-06 16:46:25.377 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-06 16:46:25.477 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/demo] - Initializing Spring embedded WebApplicationContext
+2021-01-06 16:46:25.478 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2031 ms
+2021-01-06 16:46:26.326 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-06 16:46:27.291 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2021-01-06 16:46:27.359 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '/demo'
+2021-01-06 16:46:27.397 [main] INFO  com.zyz.demo.DemoApplication - Started DemoApplication in 4.654 seconds (JVM running for 7.161)
+2021-01-06 16:46:48.128 [http-nio-8081-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/demo] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-06 16:46:48.129 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-06 16:46:48.130 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-01-06 16:46:48.189 [http-nio-8081-exec-1] INFO  com.zyz.demo.config.RequestLogAspect - findUserById(=====前置通知基于类=====)
+2021-01-06 16:46:48.208 [http-nio-8081-exec-1] INFO  com.zyz.demo.controller.TestController - findUserById方法被调用
+2021-01-06 16:46:48.208 [http-nio-8081-exec-1] INFO  com.zyz.demo.config.RequestLogAspectMethod - findUserById(=====基于方法的切面=====)
+2021-01-06 16:46:48.215 [http-nio-8081-exec-1] INFO  com.zyz.demo.service.UserService - id的值为:1
+2021-01-06 16:46:48.216 [http-nio-8081-exec-1] INFO  com.zyz.demo.config.RequestLogAspect - zyz(=====返回通知基于类=====)
+2021-01-06 16:46:48.216 [http-nio-8081-exec-1] INFO  com.zyz.demo.config.RequestLogAspect - findUserById(=====后置通知基于类=====)
+2021-01-06 16:46:48.329 [http-nio-8081-exec-1] INFO  com.zyz.demo.config.RequestLogAspect - =====环绕通知基于类的切面=====Request Info : {"classMethod":"com.zyz.demo.controller.TestController.findUserById","httpMethod":"GET","ip":"0:0:0:0:0:0:0:1","requestParams":{"id":1},"result":"zyz","timeCost":32,"url":"http://localhost:8081/demo/user/QueryUser"}

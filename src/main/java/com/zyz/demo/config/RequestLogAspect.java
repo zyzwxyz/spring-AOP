@@ -32,21 +32,20 @@ public class RequestLogAspect {
     @Before("requestServer()")
     public void before(JoinPoint joinPoint){
         String name = joinPoint.getSignature().getName();
-        LOGGER.info("{}方法开始执行(=====前置通知基于类=====)",name);
+        LOGGER.info("{}(=====前置通知基于类=====)",name);
     }
 
     //后置通知
     @After("requestServer()")
     public void after(JoinPoint joinPoint){
         String name = joinPoint.getSignature().getName();
-        LOGGER.info("{}方法开始执行(=====后置通知基于类=====)",name);
+        LOGGER.info("{}(=====后置通知基于类=====)",name);
     }
 
     //返回通知
     @AfterReturning(value = "requestServer()",returning = "result")
     public void afterRuturning(JoinPoint joinPoint,Object result){
-        String name = joinPoint.getSignature().getName();
-        LOGGER.info("{}方法开始执行(=====返回通知基于类=====)",name);
+        LOGGER.info("{}(=====返回通知基于类=====)",result);
     }
 
     //环绕通知

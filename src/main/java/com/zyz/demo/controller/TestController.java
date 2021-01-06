@@ -17,11 +17,7 @@ public class TestController {
 
     @GetMapping("/QueryUser")
     public String findUserById(Integer id){
+        log.info("findUserById方法被调用");
         return userService.findUserById(id);
-    }
-
-    @GetMapping("/deleteUser")
-    public void deleteUser(Integer id){
-        userService.deleteUser(id);
     }
 }
